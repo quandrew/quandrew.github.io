@@ -280,3 +280,41 @@ html {
     left: 0;
     z-index: 1;
 }
+
+section {
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+.content-spacing {
+    padding: 1rem;
+}
+
+.section-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section-title {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section-title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section-title {
+        font-size: 45px;
+    }
+}
