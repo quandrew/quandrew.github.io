@@ -318,3 +318,11 @@ section {
         font-size: 45px;
     }
 }
+
+a,
+a:hover,
+a:active,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
