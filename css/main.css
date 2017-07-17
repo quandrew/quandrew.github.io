@@ -323,6 +323,13 @@ a,
 a:hover,
 a:active,
 a:focus {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
 }
