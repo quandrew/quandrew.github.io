@@ -333,3 +333,52 @@ p {
     margin: 0;
     padding: 0;
 }
+
+.align-items-center {
+    align-items: center;
+}
+
+.about-icon {
+    color: #ccc;
+    font-size: 15px;
+    text-align: center;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-introduction {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+    .about-icon {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about-icon {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-icon {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-icon {
+        font-size: 35px;
+    }
+}
