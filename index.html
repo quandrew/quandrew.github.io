@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -105,6 +108,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -144,34 +148,77 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section id="skills">
         <div class="container">
+
             <div class="row">
                 <div class="col">
                     <h1 class="section-title">Skills</h1>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col content-spacing">
+                    <canvas id="chart"></canvas>
+                    <script>
+                        var ctx = document.getElementById("chart");
+                        var config = {
+                            type: "radar",
+                            data: {
+                                labels: ["C++", "CSS", "HTML", "JS", "Python", "Shell", "SQL", "VB"],
+                                datasets: [{
+                                    label: "Ability",
+                                    borderColor: "#000",
+                                    pointBorderColor: "#fff",
+                                    pointBackgroundColor: "#000",
+                                    data: ["77", "82", "85", "81", "75", "82", "70", "81"]
+                                }]
+                            },
+                            options: {
+                                maintainAspectRatio: false,
+                                scale: {
+                                    ticks: {
+                                        min: 0,
+                                        max: 100
+                                    }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        };
+                        var chart = new Chart(ctx, config);
+                    </script>
+                </div>
+            </div>
+
         </div>
     </section>
     <section id="projects">
         <div class="container">
+
             <div class="row">
                 <div class="col">
                     <h1 class="section-title">Projects</h1>
                 </div>
             </div>
+
         </div>
     </section>
+
     <section id="links">
         <div class="container">
+
             <div class="row">
                 <div class="col">
                     <h1 class="section-title">Links</h1>
                 </div>
             </div>
+
         </div>
     </section>
 
