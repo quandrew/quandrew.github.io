@@ -653,3 +653,37 @@ p {
 .social-bitcoin a {
     background-color: #f7931a;
 }
+
+.fof-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.fof-message {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+    .fof-title {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fof-title {
+        font-size: 90px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .fof-title {
+        font-size: 110px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .fof-title {
+        font-size: 130px;
+    }
+}
