@@ -528,6 +528,20 @@ p {
     }
 }
 
+.vertical-timeline-animation {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@media only screen and (min-width: 1200px) {
+    .vertical-timeline-animation {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+}
+
 @keyframes zoomIn {
     from {
         opacity: 0;
