@@ -25,3 +25,33 @@ function loadSection(section) {
         window.location.replace("404.html");
     }
 }
+
+function loadChart() {
+    var ctx = $("#chart");
+    var config = {
+        type: "radar",
+        data: {
+            labels: ["C++", "CSS", "HTML", "JS", "Python", "Shell", "SQL", "VB"],
+            datasets: [{
+                label: "Ability",
+                borderColor: "#000",
+                pointBorderColor: "#fff",
+                pointBackgroundColor: "#000",
+                data: ["77", "82", "85", "81", "75", "82", "70", "81"]
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scale: {
+                ticks: {
+                    min: 0,
+                    max: 100
+                }
+            },
+            legend: {
+                display: false
+            }
+        }
+    };
+    var chart = new Chart(ctx, config);
+}
