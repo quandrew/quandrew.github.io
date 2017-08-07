@@ -55,3 +55,30 @@ function loadChart() {
     };
     var chart = new Chart(ctx, config);
 }
+
+function loadProject() {
+    var users = [];
+    var repos = [];
+    $(".github").each(function () {
+        var user = $(this).attr("user");
+        var repo = $(this).attr("repo");
+        if ($.inArray(user, users) == -1) {
+            users.push(user);
+        }
+        if ($.inArray(`${user}/${repo}`, repos) == -1) {
+            repos.push(`${user}/${repo}`);
+        }
+    });
+    for (var user = 0; user < users.length; user++) {
+        $.get(`https://api.github.com/users/${users[user]}/repos?per_page=100`, function (user) {
+            for (var repo = 0; repo < user.length; repo++) {
+                $(`[repo="${user[repo].name}"]`).children(".url").attr({
+                    "href": user[repo].html_url,
+                    "target": "_blank"
+                });
+                $(`[repo="${user[repo].name}"]`).children(".name").append(user[repo].name);
+                $(`[repo="${user[repo].name}"]`).children(".description").append(user[repo].description);
+            }
+        });
+    }
+}
