@@ -701,3 +701,19 @@ p {
         font-size: 130px;
     }
 }
+
+.github {
+    text-align: center;
+}
+
+.github .name {
+    margin: 0;
+    padding-top: 0.5rem;
+    font-size: 20px;
+}
+
+.github .description {
+    margin: 0;
+    padding-top: 0.5rem;
+    font-size: 13px;
+}
