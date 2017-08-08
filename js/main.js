@@ -6,6 +6,16 @@ function navigateSection() {
         $(".nav-link").removeClass("active");
         $(this).addClass("active");
     });
+    $(".navbar-toggler").on("click", function () {
+        $(".navbar-toggler").toggleClass("collapsed");
+        $(".navbar-collapse").toggle();
+        $(".nav-link").on("click", function () {
+            if ($(".navbar-collapse").css("display") == "block") {
+                $(".navbar-toggler").addClass("collapsed");
+                $(".navbar-collapse").hide();
+            }
+        });
+    });
     $(window).on("hashchange", function () {
         loadSection(window.location.hash);
     });
