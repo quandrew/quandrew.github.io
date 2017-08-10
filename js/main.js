@@ -27,10 +27,22 @@ function loadSection(section) {
     var sectionWithoutHash = section.replace("#", "");
     if ($.inArray(sectionWithoutHash, sections) > -1) {
         $(section).addClass("active");
-        $(".section").load(`/sections/${sectionWithoutHash}.html`);
+        $.get(`/sections/${sectionWithoutHash}.html`, function (source) {
+            $.get("config.json", function (data) {
+                var template = Handlebars.compile(source);
+                var html = template(data);
+                $(".section").html(html);
+            });
+        });
     } else if (sectionWithoutHash == "") {
         $("#about").addClass("active");
-        $(".section").load(`/sections/about.html`);
+        $.get("/sections/about.html", function (source) {
+            $.get("config.json", function (data) {
+                var template = Handlebars.compile(source);
+                var html = template(data);
+                $(".section").html(html);
+            });
+        });
     } else {
         window.location.replace("404.html");
     }
