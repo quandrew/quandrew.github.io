@@ -7,40 +7,33 @@
     </div>
 
     <div class="row align-items-center">
+        {{#each about.icons}}{{#if left}}
         <div class="col-2 content-spacing">
             <div class="about-icon fadeInLeft">
-                <span class="fa fa-code"></span>
+                <span class="fa fa-{{left}}"></span>
             </div>
         </div>
-        <div class="col-2 content-spacing">
-            <div class="about-icon fadeInLeft">
-                <span class="fa fa-linux"></span>
-            </div>
-        </div>
+        {{/if}}{{/each}}
+
         <div class="col-4 content-spacing">
             <div class="about-image zoomIn">
-                <img src="/img/avatar.png">
+                <img src="{{about.avatar}}">
             </div>
         </div>
+
+        {{#each about.icons}}{{#if right}}
         <div class="col-2 content-spacing">
             <div class="about-icon fadeInRight">
-                <span class="fa fa-terminal"></span>
+                <span class="fa fa-{{right}}"></span>
             </div>
         </div>
-        <div class="col-2 content-spacing">
-            <div class="about-icon fadeInRight">
-                <span class="fa fa-windows"></span>
-            </div>
-        </div>
+        {{/if}}{{/each}}
     </div>
 
     <div class="row">
         <div class="col content-spacing">
             <div class="about-introduction fadeInUp">
-                <p>My name is Andrew Quan. I'm a full-time student at Pasadena City College. I'm always interested in trying
-                    out new gadgets and emerging technologies. At my leisure, I like to work with computers, whether it be
-                    hardware or software. I also like to meet new people who are passionate about the things that I also
-                    enjoy doing.</p>
+                <p>{{about.introduction}}</p>
             </div>
         </div>
     </div>
