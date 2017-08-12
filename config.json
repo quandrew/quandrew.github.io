@@ -1,0 +1,19 @@
+{
+    "about": {
+        "icons": [{
+                "left": "code"
+            },
+            {
+                "left": "linux"
+            },
+            {
+                "right": "terminal"
+            },
+            {
+                "right": "windows"
+            }
+        ],
+        "avatar": "/img/avatar.png",
+        "introduction": "My name is Andrew Quan. I'm a full-time student at Pasadena City College. I'm always interested in trying out new gadgets and emerging technologies. At my leisure, I like to work with computers, whether it be hardware or software. I also like to meet new people who are passionate about the things that I also enjoy doing."
+    }
+}
