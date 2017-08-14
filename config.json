@@ -15,5 +15,20 @@
         ],
         "avatar": "/img/avatar.png",
         "introduction": "My name is Andrew Quan. I'm a full-time student at Pasadena City College. I'm always interested in trying out new gadgets and emerging technologies. At my leisure, I like to work with computers, whether it be hardware or software. I also like to meet new people who are passionate about the things that I also enjoy doing."
-    }
+    },
+    "career": [{
+            "icon": "graduation-cap",
+            "title": "Community College",
+            "description": "I will be graduating from Pasadena City College and will be obtaining an Associate of Science in Mathematics.",
+            "date": "Jun 2018",
+            "occupation": "Student"
+        },
+        {
+            "icon": "university",
+            "title": "University",
+            "description": "I will be attending a university and majoring in Computer Science.",
+            "date": "Sep 2018",
+            "occupation": "Student"
+        }
+    ]
 }
