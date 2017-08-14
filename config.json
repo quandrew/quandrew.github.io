@@ -30,5 +30,38 @@
             "date": "Sep 2018",
             "occupation": "Student"
         }
+    ],
+    "skills": [{
+            "label": "C++",
+            "data": "77"
+        },
+        {
+            "label": "CSS",
+            "data": "82"
+        },
+        {
+            "label": "HTML",
+            "data": "85"
+        },
+        {
+            "label": "JS",
+            "data": "81"
+        },
+        {
+            "label": "Python",
+            "data": "75"
+        },
+        {
+            "label": "Shell",
+            "data": "82"
+        },
+        {
+            "label": "SQL",
+            "data": "70"
+        },
+        {
+            "label": "VB",
+            "data": "81"
+        }
     ]
 }
