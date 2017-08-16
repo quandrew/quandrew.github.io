@@ -49,17 +49,19 @@ function loadSection(section) {
 }
 
 function loadChart() {
+    var labels = $("#chart").attr("labels").split(", ");
+    var data = $("#chart").attr("data").split(", ");
     var ctx = $("#chart");
     var config = {
         type: "radar",
         data: {
-            labels: ["C++", "CSS", "HTML", "JS", "Python", "Shell", "SQL", "VB"],
+            labels: labels,
             datasets: [{
                 label: "Ability",
                 borderColor: "#000",
                 pointBorderColor: "#fff",
                 pointBackgroundColor: "#000",
-                data: ["77", "82", "85", "81", "75", "82", "70", "81"]
+                data: data
             }]
         },
         options: {
