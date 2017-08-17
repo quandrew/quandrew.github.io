@@ -63,5 +63,41 @@
             "label": "VB",
             "data": "81"
         }
+    ],
+    "links": [{
+            "icon": "envelope",
+            "social": "email",
+            "url": "mailto:quandrew@users.noreply.github.com"
+        },
+        {
+            "icon": "file-text",
+            "social": "resume",
+            "url": "resume.pdf"
+        },
+        {
+            "icon": "github",
+            "social": "github",
+            "url": "https://github.com/quandrew"
+        },
+        {
+            "icon": "linkedin",
+            "social": "linkedin",
+            "url": "https://www.linkedin.com/in/xquandrewx"
+        },
+        {
+            "icon": "facebook",
+            "social": "facebook",
+            "url": "https://www.facebook.com/xquandrewx"
+        },
+        {
+            "icon": "twitter",
+            "social": "twitter",
+            "url": "https://twitter.com/xquandrewx"
+        },
+        {
+            "icon": "btc",
+            "social": "bitcoin",
+            "url": "bitcoin:15P3YFQksJre5Lsmt2jP7MvK285mP4ehjq"
+        }
     ]
 }
