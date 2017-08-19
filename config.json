@@ -64,6 +64,11 @@
             "data": "81"
         }
     ],
+    "projects": [{
+        "icon": "file-text",
+        "user": "quandrew",
+        "repo": "quandrew.github.io"
+    }],
     "links": [{
             "icon": "envelope",
             "social": "email",
