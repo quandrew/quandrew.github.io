@@ -7,15 +7,17 @@
     </div>
 
     <div class="row">
+        {{#each projects}}
         <div class="col content-spacing">
-            <div class="github fadeInUp" user="quandrew" repo="quandrew.github.io">
+            <div class="github fadeInUp" user="{{user}}" repo="{{repo}}">
                 <a class="url">
-                  <span class="fa fa-file-text fa-5x"></span>
+                    <span class="fa fa-{{icon}} fa-5x"></span>
                 </a>
                 <h2 class="name"></h2>
                 <p class="description"></p>
             </div>
         </div>
+        {{/each}}
     </div>
 
     <script>
