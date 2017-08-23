@@ -65,10 +65,21 @@
         }
     ],
     "projects": [{
-        "icon": "file-text",
-        "user": "quandrew",
-        "repo": "quandrew.github.io"
-    }],
+            "icon": "file-text",
+            "user": "quandrew",
+            "repo": "quandrew.github.io"
+        },
+        {
+            "icon": "file-text",
+            "user": "quandrew",
+            "repo": "fruit-image-classifier"
+        },
+        {
+            "icon": "file-text",
+            "user": "quandrew",
+            "repo": "bluestacks-ad-blocker"
+        }
+    ],
     "links": [{
             "icon": "envelope",
             "social": "email",
