@@ -281,42 +281,17 @@ html {
     z-index: 1;
 }
 
-section {
-    padding: 5rem 0;
-    overflow: hidden;
-}
-
 .content-spacing {
     padding: 1rem;
 }
 
-.section-title {
-    font-size: 25px;
-    text-align: center;
+.section {
+    padding: 5rem 0;
+    overflow: hidden;
 }
 
-@media only screen and (min-width: 576px) {
-    .section-title {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .section-title {
-        font-size: 35px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .section-title {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .section-title {
-        font-size: 45px;
-    }
+.align-items-center {
+    align-items: center;
 }
 
 a,
@@ -334,8 +309,19 @@ p {
     padding: 0;
 }
 
-.align-items-center {
-    align-items: center;
+.fof-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.fof-message {
+    font-size: 13px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 25px;
+    text-align: center;
 }
 
 .about-icon {
@@ -359,28 +345,194 @@ p {
     text-align: center;
 }
 
+.github {
+    text-align: center;
+}
+
+.github .name {
+    margin: 0;
+    padding-top: 0.5rem;
+    font-size: 20px;
+}
+
+.github .description {
+    margin: 0;
+    padding-top: 0.5rem;
+    font-size: 13px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-resume a {
+    background-color: #000;
+}
+
+.social-email a {
+    background-color: #000;
+}
+
+.social-github a {
+    background-color: #333;
+}
+
+.social-linkedin a {
+    background-color: #0077b5;
+}
+
+.social-facebook a {
+    background-color: #3b5998;
+}
+
+.social-twitter a {
+    background-color: #1da1f2;
+}
+
+.social-bitcoin a {
+    background-color: #f7931a;
+}
+
 @media only screen and (min-width: 576px) {
+    .section-title {
+        font-size: 30px;
+    }
+    .fof-title {
+        font-size: 70px;
+    }
     .about-icon {
         font-size: 20px;
     }
 }
 
 @media only screen and (min-width: 768px) {
+    .section-title {
+        font-size: 35px;
+    }
+    .fof-title {
+        font-size: 90px;
+    }
     .about-icon {
         font-size: 25px;
     }
 }
 
 @media only screen and (min-width: 992px) {
+    .section-title {
+        font-size: 40px;
+    }
+    .fof-title {
+        font-size: 110px;
+    }
     .about-icon {
         font-size: 30px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
+    .section-title {
+        font-size: 45px;
+    }
+    .fof-title {
+        font-size: 130px;
+    }
     .about-icon {
         font-size: 35px;
     }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    animation-name: zoomIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.zoomIn,
+.fadeIn,
+.fadeInLeft,
+.fadeInRight,
+.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .vertical-timeline {
@@ -540,180 +692,4 @@ p {
         animation-duration: 1s;
         animation-fill-mode: both;
     }
-}
-
-@keyframes zoomIn {
-    from {
-        opacity: 0;
-        transform: scale3d(0, 0, 0);
-    }
-    50% {
-        opacity: 1;
-    }
-}
-
-.zoomIn {
-    animation-name: zoomIn;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    animation-name: fadeIn;
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translate3d(-100%, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInLeft {
-    animation-name: fadeInLeft;
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInRight {
-    animation-name: fadeInRight;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInUp {
-    animation-name: fadeInUp;
-}
-
-.zoomIn,
-.fadeIn,
-.fadeInLeft,
-.fadeInRight,
-.fadeInUp {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-icon a {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-resume a {
-    background-color: #000;
-}
-
-.social-email a {
-    background-color: #000;
-}
-
-.social-github a {
-    background-color: #333;
-}
-
-.social-linkedin a {
-    background-color: #0077b5;
-}
-
-.social-facebook a {
-    background-color: #3b5998;
-}
-
-.social-twitter a {
-    background-color: #1da1f2;
-}
-
-.social-bitcoin a {
-    background-color: #f7931a;
-}
-
-.fof-title {
-    font-size: 50px;
-    text-align: center;
-}
-
-.fof-message {
-    font-size: 13px;
-    text-align: center;
-}
-
-@media only screen and (min-width: 576px) {
-    .fof-title {
-        font-size: 70px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .fof-title {
-        font-size: 90px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .fof-title {
-        font-size: 110px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .fof-title {
-        font-size: 130px;
-    }
-}
-
-.github {
-    text-align: center;
-}
-
-.github .name {
-    margin: 0;
-    padding-top: 0.5rem;
-    font-size: 20px;
-}
-
-.github .description {
-    margin: 0;
-    padding-top: 0.5rem;
-    font-size: 13px;
 }
