@@ -202,6 +202,10 @@ html {
     border-radius: 0.25rem;
 }
 
+.navbar-toggler:focus {
+    outline: 0;
+}
+
 .navbar-toggler .icon-bar {
     display: block;
     width: 22px;
