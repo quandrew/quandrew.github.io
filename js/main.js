@@ -1,11 +1,4 @@
-function navigateSection() {
-    $(window).on("load", function () {
-        loadSection(window.location.hash);
-    });
-    $(".nav-link").on("click", function () {
-        $(".nav-link").removeClass("active");
-        $(this).addClass("active");
-    });
+function toggleNavigationButton() {
     $(".navbar-toggler").on("click", function () {
         $(".navbar-toggler").toggleClass("collapsed");
         $(".navbar-collapse").toggle();
@@ -16,8 +9,18 @@ function navigateSection() {
             }
         });
     });
+}
+
+function navigateSection() {
+    $(window).on("load", function () {
+        loadSection(window.location.hash);
+    });
     $(window).on("hashchange", function () {
         loadSection(window.location.hash);
+    });
+    $(".nav-link").on("click", function () {
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
     });
 }
 
