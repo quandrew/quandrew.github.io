@@ -314,7 +314,7 @@ p {
 }
 
 .fof-title {
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -325,6 +325,16 @@ p {
 
 .section-title {
     font-size: 25px;
+    text-align: center;
+}
+
+.noscript-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.noscript-message {
+    font-size: 13px;
     text-align: center;
 }
 
@@ -414,8 +424,11 @@ p {
     .section-title {
         font-size: 30px;
     }
+    .noscript-title {
+        font-size: 30px;
+    }
     .fof-title {
-        font-size: 70px;
+        font-size: 30px;
     }
     .about-icon {
         font-size: 20px;
@@ -426,8 +439,11 @@ p {
     .section-title {
         font-size: 35px;
     }
+    .noscript-title {
+        font-size: 35px;
+    }
     .fof-title {
-        font-size: 90px;
+        font-size: 35px;
     }
     .about-icon {
         font-size: 25px;
@@ -438,8 +454,11 @@ p {
     .section-title {
         font-size: 40px;
     }
+    .noscript-title {
+        font-size: 40px;
+    }
     .fof-title {
-        font-size: 110px;
+        font-size: 40px;
     }
     .about-icon {
         font-size: 30px;
@@ -450,8 +469,11 @@ p {
     .section-title {
         font-size: 45px;
     }
+    .noscript-title {
+        font-size: 45px;
+    }
     .fof-title {
-        font-size: 130px;
+        font-size: 45px;
     }
     .about-icon {
         font-size: 35px;
