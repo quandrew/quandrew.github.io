@@ -12,11 +12,13 @@ function toggleNavigationButton() {
 }
 
 function navigateSection() {
-    $(window).on("load", function () {
-        loadSection(window.location.hash);
-    });
-    $(window).on("hashchange", function () {
-        loadSection(window.location.hash);
+    $.get("config.json", function (data) {
+        $(document).ready(function () {
+            loadSection(window.location.hash, data);
+        });
+        $(window).on("hashchange", function () {
+            loadSection(window.location.hash, data);
+        });
     });
     $(".nav-link").on("click", function () {
         $(".nav-link").removeClass("active");
@@ -24,27 +26,23 @@ function navigateSection() {
     });
 }
 
-function loadSection(section) {
+function loadSection(section, data) {
     $(".nav-link").removeClass("active");
     var sections = ["about", "career", "links", "projects", "skills"];
     var sectionWithoutHash = section.replace("#", "");
     if ($.inArray(sectionWithoutHash, sections) > -1) {
         $(section).addClass("active");
         $.get(`/sections/${sectionWithoutHash}.html`, function (source) {
-            $.get("config.json", function (data) {
-                var template = Handlebars.compile(source);
-                var html = template(data);
-                $(".section").html(html);
-            });
+            var template = Handlebars.compile(source);
+            var html = template(data);
+            $(".section").html(html);
         });
     } else if (sectionWithoutHash == "") {
         $("#about").addClass("active");
         $.get("/sections/about.html", function (source) {
-            $.get("config.json", function (data) {
-                var template = Handlebars.compile(source);
-                var html = template(data);
-                $(".section").html(html);
-            });
+            var template = Handlebars.compile(source);
+            var html = template(data);
+            $(".section").html(html);
         });
     } else {
         window.location.replace("404.html");
