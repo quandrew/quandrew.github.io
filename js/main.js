@@ -66,7 +66,6 @@ function loadChart() {
             }]
         },
         options: {
-            maintainAspectRatio: false,
             scale: {
                 ticks: {
                     min: 0,
