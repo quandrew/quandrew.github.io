@@ -33,35 +33,35 @@
     ],
     "skills": [{
             "label": "C++",
-            "data": "77"
+            "percent": "52"
         },
         {
             "label": "CSS",
-            "data": "82"
+            "percent": "56"
         },
         {
             "label": "HTML",
-            "data": "85"
+            "percent": "61"
         },
         {
             "label": "JS",
-            "data": "81"
+            "percent": "50"
         },
         {
             "label": "Python",
-            "data": "75"
+            "percent": "30"
         },
         {
             "label": "Shell",
-            "data": "82"
+            "percent": "24"
         },
         {
             "label": "SQL",
-            "data": "70"
+            "percent": "16"
         },
         {
             "label": "VB",
-            "data": "81"
+            "percent": "21"
         }
     ],
     "projects": [{
