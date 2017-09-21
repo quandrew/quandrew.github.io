@@ -8,6 +8,12 @@
 
     <div class="row">
         <div class="col content-spacing">
+            <div class="chart-legend"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col content-spacing">
             <canvas id="chart" labels="{{#each skills}}{{label}}{{#unless @last}}, {{/unless}}{{/each}}" data="{{#each skills}}{{percent}}{{#unless @last}}, {{/unless}}{{/each}}"></canvas>
         </div>
     </div>
