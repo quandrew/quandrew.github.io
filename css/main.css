@@ -359,6 +359,11 @@ p {
     text-align: center;
 }
 
+.chart-legend {
+    font-size: 13px;
+    text-align: center;
+}
+
 .github {
     text-align: center;
 }
