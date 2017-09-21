@@ -58,7 +58,8 @@ function loadChart() {
         data: {
             labels: labels,
             datasets: [{
-                label: "Ability",
+                radius: 4,
+                pointHoverRadius: 8,
                 borderColor: "#000",
                 pointBorderColor: "#fff",
                 pointBackgroundColor: "#000",
@@ -72,12 +73,33 @@ function loadChart() {
                     max: 100
                 }
             },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem, data) {
+                        var dataset = data.datasets[tooltipItem.datasetIndex];
+                        var index = tooltipItem.index;
+                        var level;
+                        if (dataset.data[index] >= 0 && dataset.data[index] <= 33) {
+                            level = "Beginner";
+                        } else if (dataset.data[index] >= 34 && dataset.data[index] <= 67) {
+                            level = "Intermediate";
+                        } else if (dataset.data[index] >= 68 && dataset.data[index] <= 100) {
+                            level = "Expert";
+                        }
+                        return ` ${level} - ${dataset.data[index]}`;
+                    }
+                }
+            },
             legend: {
                 display: false
+            },
+            legendCallback: function (chart) {
+                return `Beginner - 0 to 33<br>Intermediate - 34 to 67<br>Expert - 68 to 100`;
             }
         }
     };
     var chart = new Chart(ctx, config);
+    $(".chart-legend").html(chart.generateLegend());
 }
 
 function loadProject() {
