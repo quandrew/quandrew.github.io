@@ -32,6 +32,14 @@
         }
     ],
     "skills": [{
+            "label": "C",
+            "percent": 25
+        },
+        {
+            "label": "C#",
+            "percent": 8
+        },
+        {
             "label": "C++",
             "percent": 52
         },
@@ -44,23 +52,31 @@
             "percent": 61
         },
         {
+            "label": "Java",
+            "percent": 12
+        },
+        {
             "label": "JS",
             "percent": 50
         },
         {
-            "label": "Python",
-            "percent": 30
+            "label": "PHP",
+            "percent": 10
         },
         {
-            "label": "Shell",
-            "percent": 24
+            "label": "Python",
+            "percent": 34
+        },
+        {
+            "label": "Ruby",
+            "percent": 14
         },
         {
             "label": "SQL",
             "percent": 16
         },
         {
-            "label": "VB",
+            "label": "VB.NET",
             "percent": 21
         }
     ],
