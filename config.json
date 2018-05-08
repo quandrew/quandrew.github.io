@@ -1,30 +1,30 @@
 {
     "about": {
-        "icons": [{
-                "left": "code"
+        "icon": [{
+                "left": "fas fa-code"
             },
             {
-                "left": "linux"
+                "left": "fab fa-linux"
             },
             {
-                "right": "terminal"
+                "right": "fas fa-terminal"
             },
             {
-                "right": "windows"
+                "right": "fab fa-windows"
             }
         ],
         "avatar": "/img/avatar.png",
         "introduction": "My name is Andrew Quan. I'm a full-time student at Pasadena City College. I'm always interested in trying out new gadgets and emerging technologies. At my leisure, I like to work with computers, whether it be hardware or software. I also like to meet new people who are passionate about the things that I also enjoy doing."
     },
     "career": [{
-            "icon": "graduation-cap",
+            "icon": "fas fa-graduation-cap",
             "title": "Community College",
             "description": "I will be graduating from Pasadena City College and will be obtaining an Associate of Science in Mathematics.",
             "date": "Jun 2018",
             "occupation": "Student"
         },
         {
-            "icon": "university",
+            "icon": "fas fa-university",
             "title": "University",
             "description": "I will be attending a university and majoring in Computer Science.",
             "date": "Sep 2018",
@@ -81,53 +81,53 @@
         }
     ],
     "projects": [{
-            "icon": "file-text",
+            "icon": "far fa-file-code",
             "user": "quandrew",
             "repo": "quandrew.github.io"
         },
         {
-            "icon": "file-text",
+            "icon": "far fa-file-code",
             "user": "quandrew",
             "repo": "bluestacks-ad-blocker"
         },
         {
-            "icon": "file-text",
+            "icon": "far fa-file-code",
             "user": "quandrew",
             "repo": "fruit-image-classifier"
         }
     ],
     "links": [{
-            "icon": "envelope",
+            "icon": "far fa-envelope",
             "social": "email",
             "url": "mailto:quandrew@users.noreply.github.com"
         },
         {
-            "icon": "file-text",
+            "icon": "far fa-file-alt",
             "social": "resume",
             "url": "resume.pdf"
         },
         {
-            "icon": "github",
+            "icon": "fab fa-github",
             "social": "github",
             "url": "https://github.com/quandrew"
         },
         {
-            "icon": "linkedin",
+            "icon": "fab fa-linkedin-in",
             "social": "linkedin",
             "url": "https://www.linkedin.com/in/xquandrewx"
         },
         {
-            "icon": "facebook",
+            "icon": "fab fa-facebook-f",
             "social": "facebook",
             "url": "https://www.facebook.com/xquandrewx"
         },
         {
-            "icon": "twitter",
+            "icon": "fab fa-twitter",
             "social": "twitter",
             "url": "https://twitter.com/xquandrewx"
         },
         {
-            "icon": "btc",
+            "icon": "fab fa-btc",
             "social": "bitcoin",
             "url": "bitcoin:15P3YFQksJre5Lsmt2jP7MvK285mP4ehjq"
         }

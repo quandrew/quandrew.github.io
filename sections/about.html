@@ -7,10 +7,10 @@
     </div>
 
     <div class="row align-items-center">
-        {{#each about.icons}}{{#if left}}
+        {{#each about.icon}}{{#if left}}
         <div class="col-2 content-spacing">
             <div class="about-icon fadeInLeft">
-                <span class="fa fa-{{left}}"></span>
+                <span class="{{left}}"></span>
             </div>
         </div>
         {{/if}}{{/each}}
@@ -21,10 +21,10 @@
             </div>
         </div>
 
-        {{#each about.icons}}{{#if right}}
+        {{#each about.icon}}{{#if right}}
         <div class="col-2 content-spacing">
             <div class="about-icon fadeInRight">
-                <span class="fa fa-{{right}}"></span>
+                <span class="{{right}}"></span>
             </div>
         </div>
         {{/if}}{{/each}}
