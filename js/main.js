@@ -32,14 +32,14 @@ function loadSection(section, data) {
     var sectionWithoutHash = section.replace("#", "");
     if ($.inArray(sectionWithoutHash, sections) > -1) {
         $(section).addClass("active");
-        $.get(`/sections/${sectionWithoutHash}.html`, function (source) {
+        $.get(`/section/${sectionWithoutHash}.html`, function (source) {
             var template = Handlebars.compile(source);
             var html = template(data);
             $(".section").html(html);
         });
     } else if (sectionWithoutHash == "") {
         $("#about").addClass("active");
-        $.get("/sections/about.html", function (source) {
+        $.get("/section/about.html", function (source) {
             var template = Handlebars.compile(source);
             var html = template(data);
             $(".section").html(html);
