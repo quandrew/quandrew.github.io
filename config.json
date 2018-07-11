@@ -99,7 +99,7 @@
     "links": [{
             "icon": "far fa-envelope",
             "social": "email",
-            "url": "mailto:quandrew@users.noreply.github.com"
+            "url": "mailto:quandrew@protonmail.com"
         },
         {
             "icon": "far fa-file-alt",
@@ -117,19 +117,9 @@
             "url": "https://www.linkedin.com/in/xquandrewx"
         },
         {
-            "icon": "fab fa-facebook-f",
-            "social": "facebook",
-            "url": "https://www.facebook.com/xquandrewx"
-        },
-        {
             "icon": "fab fa-twitter",
             "social": "twitter",
             "url": "https://twitter.com/xquandrewx"
-        },
-        {
-            "icon": "fab fa-btc",
-            "social": "bitcoin",
-            "url": "bitcoin:15P3YFQksJre5Lsmt2jP7MvK285mP4ehjq"
         }
     ]
 }
